@@ -85,13 +85,13 @@ input::placeholder{
     color: var(--pale-blue);
 }
 
-footer > p {
+.footer > p {
     color: var(--gray);
     font-size: .6em;
     font-weight: 400;
 }
 
-footer{
+.footer{
     clear: both;
     position: relative;
 }
