@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;500;600;700&display=swap');
+body{
+    --blue: hsl(223, 87%, 63%);
+    --pale-blue: hsl(223, 100%, 88%);
+    --light-red: hsl(354, 100%, 66%);
+    --gray: hsl(0, 0%, 59%);
+    --very-dark-blue: hsl(209, 33%, 12%);
+    font-family: 'Libre Franklin', sans-serif;
+    font-size:20px;
+    background: white;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.col-12{
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.error{
+    color: var(--light-red);
+    font-size: .7em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.container > .row{
+    max-width: 568px;
+}
+
+main{
+    margin: 4em 1em;
+}
+
+#logo-col > img{
+    width: 3em;
+}
+
+#form-col > h1{
+    color: var(--gray);
+    margin-bottom: .5em;
+}
+
+#form-col > h1 > span{
+    color: var(--very-dark-blue);
+    font-weight: 700;
+}
+
+#form-col > p {
+    font-size: .75em;
+    margin-bottom: 2em;
+    color: var(--very-dark-blue);
+    letter-spacing: 0;
+    font-weight: 400;
+}
+
+
+.btn{
+    width: 100%;
+    border: 1px solid var(--pale-blue);
+    border-radius: 2em;
+    background: var(--blue);
+    color: white;
+    padding: 0.75em 3em;
+    font-weight: 600;
+    box-shadow: 0 0.5em 1em -0.5em var(--pale-blue);
+}
+
+input{
+    width: 100%;
+    border: 1px solid var(--pale-blue);
+    border-radius: 2em;
+    padding: 0.75em 1em;
+    padding-left: 2.5em;
+    margin-bottom: .5em;
+    font-size: .75em;
+}
+
+input::placeholder{
+    color: var(--pale-blue);
+}
+
+footer > p {
+    color: var(--gray);
+    font-size: .6em;
+    font-weight: 400;
+}
+
+footer > .col-12{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.fab{
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px hsla(223, 100%, 88%, 0.5);
+    color:var(--blue);
+    width: 1.5em;
+    height: 1.5em;
+    margin: 0 .5em;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden{
+    display: none;
+}
+
+.error-border{
+    border: 1px solid var(--light-red);
+}
+
+@media screen and (min-width: 768px){
+    .btn{
+        width: auto;
+    }
+    input{
+        width: 65%;
+    }
+    .error{
+        color: var(--light-red);
+        font-size: .7em;
+        text-align: center;
+        margin-left: 3em;
+        margin-bottom: 1em;
+        position: fixed;
+        
+    }
+
+    .btn:hover{
+        background: hsla(223, 87%, 63%, 0.514);
+        border: 1px solid hsla(223, 87%, 63%, 0.514);
+    }
+
+    .fab:hover{
+        background: var(--blue);
+        color: white;
+        cursor: pointer;
+    }
+}
