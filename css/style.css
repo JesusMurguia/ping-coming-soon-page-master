@@ -14,7 +14,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 100%;
 }
 
 .col-12{
@@ -91,6 +91,10 @@ footer > p {
     font-weight: 400;
 }
 
+footer{
+    clear: both;
+    position: relative;
+}
 footer > .col-12{
     display: flex;
     flex-direction: row;
